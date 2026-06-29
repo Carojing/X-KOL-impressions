@@ -1,0 +1,4 @@
+interface:
+  display_name: "X Profile Impressions"
+  short_description: "Extract X account bases and recent post impressions."
+  default_prompt: "Use $x-profile-impressions to extract these X profile links into Excel and a Feishu-copyable TSV."

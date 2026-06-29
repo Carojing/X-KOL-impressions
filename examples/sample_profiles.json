@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Example AI",
+    "profile_url": "https://x.com/example_ai",
+    "screen_name": "@example_ai",
+    "bio": "Example profile for testing only.",
+    "joined": "January 2026",
+    "following": "120 Following",
+    "followers": "12.4K Followers",
+    "posts_count": "820 posts",
+    "account_based_in": "South Asia",
+    "verified_since": "May 2026",
+    "connected_via": "Web",
+    "owner": "Jessi",
+    "posts": [
+      {
+        "status_url": "https://x.com/example_ai/status/1000000000000000001",
+        "date": "Jun 27",
+        "views_raw": "5600",
+        "impressions": 5600,
+        "view_label": "5 replies, 10 likes, 5600 views",
+        "text_preview": "Example original post."
+      },
+      {
+        "status_url": "https://x.com/example_ai/status/1000000000000000002",
+        "date": "Jun 26",
+        "views_raw": "7200",
+        "impressions": 7200,
+        "view_label": "3 replies, 12 likes, 7200 views",
+        "text_preview": "Example quote post."
+      },
+      {
+        "status_url": "https://x.com/example_ai/status/1000000000000000003",
+        "date": "Jun 25",
+        "views_raw": "4100",
+        "impressions": 4100,
+        "view_label": "2 replies, 8 likes, 4100 views",
+        "text_preview": "Another example post."
+      },
+      {
+        "status_url": "https://x.com/example_ai/status/1000000000000000004",
+        "date": "Jun 24",
+        "views_raw": "8900",
+        "impressions": 8900,
+        "view_label": "4 replies, 15 likes, 8900 views",
+        "text_preview": "Fourth example post."
+      },
+      {
+        "status_url": "https://x.com/example_ai/status/1000000000000000005",
+        "date": "Jun 23",
+        "views_raw": "6300",
+        "impressions": 6300,
+        "view_label": "6 replies, 18 likes, 6300 views",
+        "text_preview": "Fifth example post."
+      }
+    ]
+  }
+]
