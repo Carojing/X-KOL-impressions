@@ -19,6 +19,7 @@ name	Followers	owner	Link	近5条平均曝光（k）	Region
 
 ## Extraction Rules
 
+- If a TweetClaw or other X/Twitter profile CSV export is available, convert it with `scripts/import_tweetclaw_profiles.mjs` and use the generated JSON as the profile seed list.
 - Use browser automation with logged-in X state when available.
 - Visit each profile page and `/about` page.
 - Collect display name, profile URL, follower count, bio, joined date, account base, verified-since, connected-via.
