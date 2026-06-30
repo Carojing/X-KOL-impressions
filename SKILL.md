@@ -17,6 +17,7 @@ Process X profile link lists into outreach-ready tables. The expected final deli
    - Strip query strings such as `?s=20`.
    - Preserve the handle case in URLs when useful, but use `https://x.com/<handle>` as the canonical profile URL.
    - De-duplicate by lowercase handle.
+   - If the user provides a TweetClaw or X/Twitter profile CSV export, run `scripts/import_tweetclaw_profiles.mjs` first to create a JSON seed list, then continue extraction from that list.
 
 2. Use Chrome browser automation when available.
    - Prefer Chrome because X often requires logged-in state to show views and `/about` account-base information.
@@ -100,6 +101,18 @@ Use this shape as input to `scripts/build_workbook.mjs`:
 ```
 
 ## Workbook/TSV Builder
+
+To start from a TweetClaw profile CSV export:
+
+```bash
+node scripts/import_tweetclaw_profiles.mjs \
+  --input examples/tweetclaw_profiles.csv \
+  --output outputs/profile_seed.json \
+  --owner Jessi
+```
+
+Use the generated JSON as the browser extraction seed. Fill `posts` with current
+original or quote-post samples before calculating final averages.
 
 After extracting JSON, run:
 

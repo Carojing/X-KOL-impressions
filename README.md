@@ -60,6 +60,23 @@ The generic builder uses only Node.js standard libraries and writes both:
 - `x_profiles.xlsx`
 - `x_profiles_feishu.tsv`
 
+## Start from a TweetClaw Profile Export
+
+If you already exported candidate accounts with TweetClaw or another X/Twitter
+profile source, convert the CSV into this skill's JSON shape first:
+
+```bash
+node scripts/import_tweetclaw_profiles.mjs \
+  --input examples/tweetclaw_profiles.csv \
+  --output outputs/profile_seed.json \
+  --owner Jessi
+```
+
+Then use the generated JSON as the seed list for browser extraction. The importer
+keeps profile URLs, handles, names, follower counts, bios, and region fields. It
+leaves `posts` empty so the agent can still collect the current 3 to 5 eligible
+post samples before calculating average exposure.
+
 ## Example Prompt
 
 ```text
