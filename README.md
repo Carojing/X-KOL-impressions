@@ -60,6 +60,12 @@ The generic builder uses only Node.js standard libraries and writes both:
 - `x_profiles.xlsx`
 - `x_profiles_feishu.tsv`
 
+### Optional Hermes Tweet Preflight
+
+Hermes Agent users can install [Hermes Tweet](https://github.com/Xquik-dev/hermes-tweet) and set `XQUIK_API_KEY` to verify public profile URLs and collect recent public post URLs before the browser extraction pass. Leave `HERMES_TWEET_ENABLE_ACTIONS` unset for this read-only workflow.
+
+This is a preflight path only. Keep using browser automation for view labels and `/about` fields because those values may require logged-in X page evidence.
+
 ## Example Prompt
 
 ```text

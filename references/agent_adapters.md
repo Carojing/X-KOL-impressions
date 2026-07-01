@@ -20,6 +20,8 @@ This project is intentionally agent-neutral.
 
 - Treat `AGENTS.md` and `references/browser_extraction.md` as the operational prompt.
 - Use a logged-in browser context when possible.
+- If Hermes Tweet is installed, set `XQUIK_API_KEY` and use its read-only tools to preflight public profile URLs and recent post URLs before browser extraction.
+- Leave `HERMES_TWEET_ENABLE_ACTIONS` unset for this read-only profile research workflow.
 - If no browser is available, ask the user for exported profile/post data and run only the builder.
 
 ## Other Agents
